@@ -31,7 +31,7 @@ A complete Spring Boot REST API application with full CRUD operations, layered a
 - **CI/CD Pipeline**: Jenkins pipeline for automated build, test, and deployment
 - **Docker Support**: Multi-stage Dockerfile for containerization
 - **Docker Compose**: Orchestration for local development
-
+##
 ## 🏗️ Architecture
 ```
 ┌─────────────────────────────────────────────────────────────┐
