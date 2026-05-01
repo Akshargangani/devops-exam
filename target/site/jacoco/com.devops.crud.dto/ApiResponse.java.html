@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ApiResponse.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">crud-application</a> &gt; <a href="index.source.html" class="el_package">com.devops.crud.dto</a> &gt; <span class="el_source">ApiResponse.java</span></div><h1>ApiResponse.java</h1><pre class="source lang-java linenums">package com.devops.crud.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+/**
+ * Standard API response wrapper for all API endpoints.
+ * Provides consistent response structure across the application.
+ *
+ * @param &lt;T&gt; the type of data contained in the response
+ */
+<span class="nc bnc" id="L16" title="All 34 branches missed.">@Data</span>
+<span class="pc" id="L17">@Builder</span>
+<span class="nc" id="L18">@NoArgsConstructor</span>
+<span class="fc" id="L19">@AllArgsConstructor</span>
+public class ApiResponse&lt;T&gt; {
+
+<span class="fc" id="L22">    private boolean success;</span>
+<span class="fc" id="L23">    private String message;</span>
+<span class="fc" id="L24">    private T data;</span>
+<span class="fc" id="L25">    private LocalDateTime timestamp;</span>
+
+    /**
+     * Create a success response.
+     */
+    public static &lt;T&gt; ApiResponse&lt;T&gt; success(T data) {
+<span class="nc" id="L31">        return ApiResponse.&lt;T&gt;builder()</span>
+<span class="nc" id="L32">                .success(true)</span>
+<span class="nc" id="L33">                .message(&quot;Success&quot;)</span>
+<span class="nc" id="L34">                .data(data)</span>
+<span class="nc" id="L35">                .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L36">                .build();</span>
+    }
+
+    /**
+     * Create a success response with custom message.
+     */
+    public static &lt;T&gt; ApiResponse&lt;T&gt; success(String message, T data) {
+<span class="fc" id="L43">        return ApiResponse.&lt;T&gt;builder()</span>
+<span class="fc" id="L44">                .success(true)</span>
+<span class="fc" id="L45">                .message(message)</span>
+<span class="fc" id="L46">                .data(data)</span>
+<span class="fc" id="L47">                .timestamp(LocalDateTime.now())</span>
+<span class="fc" id="L48">                .build();</span>
+    }
+
+    /**
+     * Create an error response.
+     */
+    public static &lt;T&gt; ApiResponse&lt;T&gt; error(String message) {
+<span class="nc" id="L55">        return ApiResponse.&lt;T&gt;builder()</span>
+<span class="nc" id="L56">                .success(false)</span>
+<span class="nc" id="L57">                .message(message)</span>
+<span class="nc" id="L58">                .data(null)</span>
+<span class="nc" id="L59">                .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L60">                .build();</span>
+    }
+
+    /**
+     * Create an error response with data.
+     */
+    public static &lt;T&gt; ApiResponse&lt;T&gt; error(String message, T data) {
+<span class="nc" id="L67">        return ApiResponse.&lt;T&gt;builder()</span>
+<span class="nc" id="L68">                .success(false)</span>
+<span class="nc" id="L69">                .message(message)</span>
+<span class="nc" id="L70">                .data(data)</span>
+<span class="nc" id="L71">                .timestamp(LocalDateTime.now())</span>
+<span class="nc" id="L72">                .build();</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

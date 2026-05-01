@@ -1,0 +1,53 @@
+# Git files
+.git
+.gitignore
+.gitattributes
+
+# IDE files
+.idea
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings
+.vscode
+
+# Build outputs (these will be generated in the container)
+target
+!target/*.jar
+
+# Documentation
+*.md
+README.md
+LICENSE
+
+# Logs
+*.log
+logs
+
+# Test files
+src/test
+test
+
+# CI/CD files
+Jenkinsfile
+.github
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Node modules (if any)
+node_modules
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~

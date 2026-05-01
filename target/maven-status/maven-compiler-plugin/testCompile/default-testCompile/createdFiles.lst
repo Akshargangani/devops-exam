@@ -1,0 +1,4 @@
+com\devops\crud\controller\UserControllerTest.class
+com\devops\crud\repository\UserRepositoryTest.class
+com\devops\crud\CrudApplicationTests.class
+com\devops\crud\service\UserServiceTest.class

@@ -1,0 +1,10 @@
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\exception\UserNotFoundException.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\exception\GlobalExceptionHandler.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\service\UserService.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\entity\User.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\dto\UserDTO.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\repository\UserRepository.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\controller\UserController.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\dto\ApiResponse.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\exception\DuplicateEmailException.java
+C:\Users\AKSHAR\OneDrive\Desktop\devops\src\main\java\com\devops\crud\CrudApplication.java
