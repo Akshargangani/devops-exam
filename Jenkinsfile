@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9.jenkins'   // must match Jenkins Global Tool name
-        jdk 'jdk-17'                // must match exactly (case-sensitive)
+        maven 'Maven-3.9.jenkins'
+        jdk 'jdk-17'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Akshargangani/devops-exam'
+                git branch: 'main', url: 'https://github.com/Akshargangani/devops-exam'
             }
         }
 
