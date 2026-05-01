@@ -33,7 +33,7 @@ A complete Spring Boot REST API application with full CRUD operations, layered a
 - **Docker Compose**: Orchestration for local development
 
 ## 🏗️ Architecture
-
+//
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    Client (Browser/Postman)                 │
